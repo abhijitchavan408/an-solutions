@@ -14,6 +14,7 @@ import {
 import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Logo from "@/public/images/an-logo.png";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -29,11 +30,12 @@ export function Navbar() {
         >
           <div className="flex items-center justify-center rounded-lg bg-primary">
             <Image
-              src="/images/an-logo.png" // inside public/images
+              src={Logo}
               alt="AN Solutions Logo"
               width={100}
               height={100}
               className="object-contain"
+              priority
             />
           </div>
         </Link>

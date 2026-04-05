@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://abhijitchavan408.github.io/an-solutions/
+
+# Sitemaps
+Sitemap: https://abhijitchavan408.github.io/an-solutions/sitemap.xml

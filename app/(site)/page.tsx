@@ -6,12 +6,12 @@ import { CTASection } from "@/components/home/cta-section";
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <HeroSection />
       <ServicesPreview />
       <StatsSection />
       <TestimonialsSection />
       <CTASection />
-    </>
+    </main>
   );
 }

@@ -12,8 +12,10 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
-  { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
+  { label: "Appointment", href: "/appointment" },
+  { label: "Dashboard", href: "/dashboard" },
+  { label: "Test", href: "/test" },
 ] as const;
 
 export const SERVICES = [

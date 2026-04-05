@@ -14,7 +14,7 @@ import {
 import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Logo from "@/public/images/an-logo.png";
+import Logo from "@/public/images/an-logo-updated.png";
 
 export function Navbar() {
   const pathname = usePathname();

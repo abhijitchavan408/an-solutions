@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HERO_POINTS = [
@@ -10,46 +10,49 @@ const HERO_POINTS = [
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden border-b bg-card">
-      {/* Decorative background grid */}
+    <section className="relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-accent/5">
+      {/* Animated gradient orbs */}
       <div
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border)/0.3)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border)/0.3)_1px,transparent_1px)] bg-[size:4rem_4rem]"
+        className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,hsl(var(--primary)/0.08)_0%,transparent_60%)]"
+        className="pointer-events-none absolute -bottom-20 -right-20 h-[400px] w-[400px] rounded-full bg-accent/10 blur-3xl"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl"
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-20 text-center lg:px-8 lg:py-32">
-        <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-          </span>
+      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-16 text-center lg:px-8 lg:py-28">
+        <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary shadow-sm shadow-primary/10">
+          <Sparkles className="h-3.5 w-3.5" />
           Now accepting new projects for 2026
         </div>
 
         <h1 className="max-w-4xl text-balance font-heading text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
           We Build Digital Products That{" "}
-          <span className="text-primary">Drive Growth</span>
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Drive Growth
+          </span>
         </h1>
 
-        <p className="max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg lg:text-xl">
+        <p className="max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
           From responsive websites to custom enterprise software, AN Solutions
-          Solutions helps businesses transform with modern technology and
-          scalable digital solutions.
+          helps businesses transform with modern technology and scalable
+          digital solutions.
         </p>
 
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <Button asChild size="lg" className="gap-2">
+        <div className="flex flex-col items-center gap-3 sm:flex-row">
+          <Button asChild size="lg" className="gap-2 bg-gradient-to-r from-primary to-primary/90 shadow-lg shadow-primary/25 transition-shadow hover:shadow-xl hover:shadow-primary/30">
             <Link href="/contact">
               Get Started
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg">
-            <Link href="/portfolio">View Our Work</Link>
+          <Button asChild size="lg" variant="outline" className="gap-2">
+            <Link href="/services">View Services</Link>
           </Button>
         </div>
 

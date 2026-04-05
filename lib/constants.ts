@@ -15,7 +15,6 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
   { label: "Appointment", href: "/appointment" },
   { label: "Dashboard", href: "/dashboard" },
-  { label: "Test", href: "/test" },
 ] as const;
 
 export const SERVICES = [
@@ -175,19 +174,19 @@ export const TESTIMONIALS = [
   {
     quote:
       "AN Solutions transformed our outdated systems into a modern, scalable platform. Their team's expertise and professionalism exceeded our expectations.",
-    author: "David Miller",
-    role: "CTO, FinPay Inc.",
+    author: "Rajesh Mehta",
+    role: "Tech Lead, Novaloop Systems",
   },
   {
     quote:
       "The mobile app they built for us has been a game-changer. User engagement increased by 300% within the first quarter of launch.",
-    author: "Lisa Tran",
+    author: "Priya Nair",
     role: "Product Director, HealthTrack",
   },
   {
     quote:
       "Working with AN Solutions felt like having an extension of our own team. They truly understood our vision and delivered beyond what we imagined.",
-    author: "Robert Kim",
+    author: "Arjun Kapoor",
     role: "Founder, ShopVerse",
   },
 ] as const;

@@ -36,6 +36,9 @@ export const metadata: Metadata = {
       "Cutting-edge website development, mobile app development, UI/UX design, and custom software solutions.",
     type: "website",
   },
+  verification: {
+    google: "VpwDnwDxQ93BDwvhfmqvzvFuJkuMq4-_1z0m1DKuCMo",
+  },
 };
 
 export const viewport: Viewport = {
